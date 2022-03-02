@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Homework</title>
 </head>
+
 <body>
-<!--
+  <!--
 Обязательное задание.
 
 Необходимо реализовать четыре функции, каждая функция должна принимать по два
@@ -28,10 +30,52 @@
 
 Необходимо для всех функций прописать комментарии jsdoc https://jsdoc.app/.
 -->
-<script>
-  "use strict";
+  <script>
+    "use strict";
 
-  // Здесь пишем решение, данный комментарий необходимо стереть.
-</script>
+    /**
+    * Считает сумму переданных аргументов.
+    * @param {number} a - Первое число.
+    * @param {number} b - Второе число.
+    * @return {number} Сумма чисел.
+    */
+    function sum(a, b) {
+      return a + b;
+    }
+
+    /**
+    * Получает два аргумента, сравнивает, из большего числа вычитает меньшее.
+    * @param {number} a - Первое число.
+    * @param {number} b - Второе число.
+    * @return {number} Сумма чисел.
+    */
+    function difference(a, b) {
+      if (a > b) {
+        return a - b;
+      }
+      return b - a;
+    }
+
+    /**
+    * Считает произведение переданных аргументов.
+    * @param {number} a - Первое число.
+    * @param {number} b - Второе число.
+    * @return {number} Сумма чисел.
+    */
+    function multiplication(a, b) {
+      return a * b;
+    }
+
+    /**
+    * Считает частное переданных аргументов.
+    * @param {number} a - Первое число.
+    * @param {number} b - Второе число.
+    * @return {number} Сумма чисел.
+    */
+    function division(a, b) {
+      return a / b;
+    }
+  </script>
 </body>
+
 </html>
